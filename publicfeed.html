@@ -14,6 +14,8 @@
 <body>
 
     <div class="container-fluid">
+
+
         <div class="d-flex justify-content-between ">
             <div class="d-flex">
                 <a class="navbar-brand" href="dashboard.html"><img src="assets/logo (1).png" alt=""
@@ -32,17 +34,18 @@
                             <li class="navbar-button">
                                 <a class="" aria-current="page" href="dashboard.html">Home</a>
                             </li>
-                            <li class="navbar-button" >
-                                <a class="" href="userprofile.html" >My Recipe</a>
-                            </li>
+                            
                             <li class="navbar-button">
-                                <a class="" href="publicfeed.html">Public Feed</a>
+                                <a class="" href="userprofile.html">My Recipes</a>
+                            </li>
+                            <li class="navbar-button" id="Favourites">
+                                <a class="" href="publicfeed.html" >Public Feed</a>
                             </li>
                             <li class="navbar-button">
                                 <a class="" href="about.html">About</a>
                             </li>
-    
-    
+
+
                         </ul>
                         <div class="d-flex">
                             <button id="logout-btn" class="btn btn-outline-dark ">
@@ -55,23 +58,21 @@
         </div>
     </div>
 
-   
 
-
-
+    <section>
             <div class="row justify-content-center">
-               <h1 class="text-center">MY RECIPE</h1>
-                    <div id="feed-container">
+                <h1 class="text-center">PUBLIC FEED</h1>
 
-                       
+              <div id="feed-container">
+               
 
-                    </div>
-            
+
+               </div>
             </div>
-          
-     
+        
 
 
+        
 
         <!-- Footer-section -->
         <footer class="footer text-center">
@@ -120,7 +121,7 @@
         <script type="module" src="config.js"></script>
         <script type="module" src="auth.js"></script>
         <script type="module" src="app.js"></script>
-        <script type="module" src="userprofile.js"></script>
+        <script type="module" src="publicfeed.js"></script>
         <script type="module" src="config.js"></script>
         <script type="module" src="dashboard.js"></script>
         <script src="bootstrap.js"></script>

@@ -1,6 +1,8 @@
-let post_container = document.getElementById("feed-container")
-let username= document.getElementById("username") 
+let post_container = document.getElementById ('feed-container');
+let username = document.getElementById ('username');
+let currentuserid
 let favoritesbtn=document.getElementById("Favourites")
+
 async function loadPosts(){
   try {
     const {data: postsData, error: postsError} = await supabase
@@ -28,7 +30,7 @@ async function loadPosts(){
               let currentUser = usersMap[posts.UID]
               console.log(currentUser)
              
-              if(currentUser.userId === myId.uid){
+             
                 if (post_container) {
                   post_container.innerHTML += ` 
               <div class="  container w-75 my-5 py-1 rounded-3">
@@ -88,7 +90,7 @@ async function loadPosts(){
             </div>`;
                 }
             }
-          }
+          
             )
           }
       } catch (error) {
@@ -100,13 +102,14 @@ async function loadPosts(){
   }
 }
 
+
 async function deleteMyPost(postId) {
   try {
     Swal.fire({
-      title: "Are you sure want to delete the Post",
+      title: "Are you sure want to delete the post",
       showCancelButton: true,
       confirmButtonText: "Delete",
-    }).then(async (result) => {
+    }).then(async(result) => {
       if (result.isConfirmed) {
         const { data:postdeletedata, error:postdeleteerror } = await supabase
           .from("posts")
@@ -120,6 +123,7 @@ async function deleteMyPost(postId) {
         if(postdeletedata){
           post_container.innerHTML=""
           loadPosts()
+          loadFavourites()
           Swal.fire({
             icon: 'success' ,
             title: 'Post Deleted Succesfully '
@@ -135,18 +139,22 @@ async function deleteMyPost(postId) {
   } catch (error) {
     console.log(error);
   }
-   }
    
-   
-  
+      
+
+    
+  }
+
+
+ 
 
 
 
-  
-  window.deleteMyPost = deleteMyPost;
-  
-  
 
-window.onload = loadPosts()
-window.onload= window.getSession
+
+window.deleteMyPost = deleteMyPost;
+
+window.loadPosts=loadPosts
+window.onload = loadPosts();
+window.onload = window.getSession;
 

@@ -8,16 +8,16 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="about.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CHU FANG</title>
 </head>
 
 <body>
 
-<div class="container-fluid">
     <div class="d-flex justify-content-between ">
         <div class="d-flex">
-            <a class="navbar-brand" href="dashboard.html"><img src="assets/logo (1).png" alt=""
+            <a class="navbar-brand" href="#"><img src="assets/logo (1).png" alt=""
                     style="height: 150px; width: 150px;"></a>
             <h2 class="mt-5 logo-text">Chû Fãng</h2>
         </div>
@@ -54,100 +54,63 @@
             </div>
         </nav>
     </div>
-</div>
 
 
-
-        <div class="container-fluid">
-            <div class="  d-flex justify-content-center flex-column align-items-center">
-                <video class="w-75 h-50" autoplay muted src="assets/CHU Fang_20250126_001337_0001.mp4"></video>
-                <div class="align-self-end mt-2 me-3  position-fixed bottom-20" style="z-index: 2;">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                            class="fa-solid fa-plus"></i></button>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body d-flex flex-column h-100 align-items-center justify-content-center">
-                                <h3 class="mb-3 text-center">ADD YOUR RECIPE HERE</h3>
-                                <div class="d-flex flex-column gap-2 h-100 align-items-center justify-content-center w-75  signup-form">
-                    
-                                    <label for="recipe-name" class="form-label">RECIPE NAME</label>
-                                    <input class="form-control" id="recipe-name" type="text">
-                              
-                                    <label for="recipe-name" class="form-label">RECIPE INGREDIENTS</label>
-                                    <textarea class="form-control" name="recipe-ingredients" id="ingredients"></textarea>
-                    
-                    
-                                    <label for="recipe-method" class="form-label">RECIPE METHOD</label>
-                                    <textarea class="form-control" name="recipe-method" id="method"></textarea>
-
-                                    <label for="picture" class="form-label">ADD A PICTURE(optional)</label>
-                                    <input id="post-file" class="form-control" type="file">
-                                    <div class="mt-1 d-flex flex-column gap-2 justify-content-center align-items-center">
-                                        <button class=" btn btn-outline-dark" id="post-btn" type="button"> POST  <div  style="width: 18px; height: 18px;" class="spinner-border text-dark d-none" id="loader" role="status">
-                                            <span  class="visually-hidden">Loading...</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            
-        </div>
-  
-
-        <div class="container-fluid">
-            <div class=" sec-section row my-5 py-5">
-                <div class=" d-flex align-items-center col-12 col-md-6 text-center mx-0">
-                    <p class="fs-5">
-                        "Explore the rich and diverse world of Chinese cuisine with our collection of authentic,
-                        easy-to-follow recipes.
-                        From timeless classics to regional specialties, our site is designed to help you master the art
-                        of Chinese cooking with precision and ease. Whether you're a home cook or a culinary enthusiast,
-                        we provide everything you need to create restaurant-quality dishes at home."
-                    </p>
-
-                </div>
-                <div class="col-12 col-md-6">
-                    <img class="w-100"
-                        src="assets/pngtree-lot-of-chinese-food-on-a-table-filled-with-chopsticks-picture-image_2612447.jpg"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center headings my-5 py-3">
-                <p>
-                    OUR MOST TRENDING ONE'S
+    <div class="container">
+        <h1 class="text-center mb-5">About us</h1>
+        <div class="row">
+            <div class="col-6">
+                <p class="fs-4 mt-3">Welcome to <strong>Chû Fãng</strong>, where tradition meets flavor! Located in the
+                    heart of karachi, we are dedicated to bringing you the most authentic and delicious Chinese cuisine.
+                    Our recipes have been passed down through generations, ensuring every dish is rich in history and
+                    taste.
                 </p>
-    
+                
             </div>
-            <div class="d-flex recipes flex-column justify-content-between align-items-center mb-5 py-5">
-                <div class="row g-4 justify-content-center " id="recipes">
-    
-                </div>
-    
-                <div class="mt-3">
-                    <button class=" btn btn-danger">CHECK PUBLIC FEED</button>
-                </div>
+            <div class="col-6">
+                <img src="assets/resturant2.jpg" alt="" class="rounded" style="width: 100%;">
             </div>
-
         </div>
-    
 
-  
-      
 
+        <div class="row mt-5">
+            <div class="col-6">
+                <img src="assets/noodle.jpg" alt="" class="rounded" style="width: 100%;">
+            </div>
+            <div class="col-6">
+                
+                <p class="fs-4 mt-3">
+                    At Chû Fãng, we believe that food is more than just a meal—it's an experience. From our savory
+                    dumplings to our aromatic stir-fries, every bite tells a story. Whether you're dining in or ordering
+                    takeout, we strive to provide you with an unforgettable culinary journey.
+                </p>
+              
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6">
+                
+                <p class="fs-4 mt-3">
+                    Our team of skilled chefs uses only the freshest ingredients to create dishes that are both healthy
+                    and flavorful. We take pride in our commitment to quality, authenticity, and exceptional customer
+                    service.
+                </p>
+                <p class="fs-4">
+                    Join us and discover the true taste of China. We look forward to serving you!
+                </p>
+            </div>
+            <div class="col-6 mb-5">
+                <img src="assets/chief2.jpg" alt="" class="rounded" style="width: 100%;">
+            </div>
+        </div>
+
+
+
+        
+    </div>
 
     <!-- Footer-section -->
-    <footer class="footer text-center">
+    <footer class="footer text-center mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3">
@@ -201,48 +164,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://kit.fontawesome.com/9ac5fe7ab7.js" crossorigin="anonymous"></script>
     <script type="module" src="config.js"></script>
-    <script type="module" src="auth.js"></script>
     <script type="module" src="app.js"></script>
+    <script type="module" src="auth.js"></script>
     <script type="module" src="userprofile.js"></script>
     <script type="module" src="config.js"></script>
     <script type="module" src="dashboard.js"></script>
@@ -252,8 +177,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
-
+    </script>
 </body>
 
 </html>
