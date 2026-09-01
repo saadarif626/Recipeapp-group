@@ -5,7 +5,7 @@ let loginEmail = document.getElementById("login-email");
 let loginPass = document.getElementById("login-pass");
 let loginBtn = document.getElementById("login-btn");
 let signupName = document.getElementById("signup-name");
-let signupGoogle = document.getElementById("google-btn");
+// let signupGoogle = document.getElementById("google-btn");
 let logoutbtn = document.getElementById("logout-btn");
 let emailregex= /^\S+@\S+\.\S+$/;
 let nameregex=/^[a-zA-Z]+$/;
@@ -85,38 +85,38 @@ if (signupBtn) {
   signupBtn.addEventListener("click", signup);
 }
 
-async function signupWithGoogle() {
-  document.getElementById("loader-g").classList.remove("d-none")
+// async function signupWithGoogle() {
+//   document.getElementById("loader-g").classList.remove("d-none")
 
-  try {
-    const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-    });
+//   try {
+//     const { data, error } = await supabase.auth.signInWithOAuth({
+//       provider: "google",
+//     });
 
-    if (error) throw error;
-    if (data) {
-      console.log(data)
-      Swal.fire({
-        title: "Sign-Up Successfully!",
-        icon: "success",
-        draggable: true,
-      });
-      document.getElementById("loader-g").classList.add("d-none")
-    }
+//     if (error) throw error;
+//     if (data) {
+//       console.log(data)
+//       Swal.fire({
+//         title: "Sign-Up Successfully!",
+//         icon: "success",
+//         draggable: true,
+//       });
+//       document.getElementById("loader-g").classList.add("d-none")
+//     }
 
-  } catch (error) {
-    Swal.fire({
-      title: `${error.message}`,
-      icon: "error",
-      draggable: true,
-    });
-    document.getElementById("loader-g").classList.add("d-none")
+//   } catch (error) {
+//     Swal.fire({
+//       title: `${error.message}`,
+//       icon: "error",
+//       draggable: true,
+//     });
+//     document.getElementById("loader-g").classList.add("d-none")
 
-  }
-}
-if (signupGoogle) {
-  signupGoogle.addEventListener("click", signupWithGoogle);
-}
+//   }
+// }
+// if (signupGoogle) {
+//   signupGoogle.addEventListener("click", signupWithGoogle);
+// }
 
 async function loginsession() {
   document.getElementById("loader").classList.remove("d-none")
